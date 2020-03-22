@@ -4,6 +4,7 @@ Concepts
 | **Process:** Abstraction that represents a program in execution.
 | **Container:** Wrap a process/program, or set of process/programs that run isolately and share the computer host 
 resources, as kernel, binaries and libraries.
+
 | A container should stores everything a program needs: code, tools and dependencies.
 | A container should isolate the program in your enviroment and guarantee the same behavior in different enviroments
 as development and production.
