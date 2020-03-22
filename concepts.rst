@@ -1,16 +1,12 @@
-Conceitos
+Concepts
 =========
 
-| **Processo:** Abstração que representa um programa em execução.
-| **Container:** São processos isolados que compartilham  os recursos do computador host, 
-como kernel, sistema de arquivos e a biblioteca padrao.
-| Um container docker possui tudo que um programa precisa para funcionar: codigo, ferramentas, 
-dependencias e configuração. 
-Tem a função de isolar o programa do seu ambiente e garantir que ele funcione da mesma forma 
-em diferentes ambientes, como por exemplo desenvolvimento e produção.
-| Um container é um ambiente leve e portatil.
-| Algo entre um chroot em uma VM.
-
+| **Process:** Abstraction that represents a program in execution.
+| **Container:** Wrap a process/program, or set of process/programs that run isolately and share the computer host 
+resources, as kernel, binaries and libraries.
+| A container should stores everything a program needs: code, tools and dependencies.
+| A container should isolate the program in your enviroment and guarantee the same behavior in different enviroments
+as development and production.
 
 | **Docker:** Docker é uma ferramenta para gereciamento de containers. Conteinerzação não é um conceito novo, ele ja ja existia no ecossistema Linux, o Docker facilitou a criação e gerenciamento
 de containers através de interfaces amigaveis como REST API, CLI e dockerfiles.
