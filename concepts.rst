@@ -24,11 +24,14 @@ Containerzation was no created by docker, it already existed in linux ecosystem,
 - Layers make images high reusable.
 - It is possible build images from layers of other images.
 
-| **Docker Image Vs Docker Container**
-| Docker images can be compared as classes and docker containers as objects.
+**Docker Image Vs Docker Container:** Docker images can be compared as classes and docker containers as objects.
 
-| **Porque não usar uma VM:** O ganho que sem tem ao usar docker ao invés de uma VM é a economia de recursos
-computacionais, uma VM terá seu pŕoprio sistema operacional completo, com kernel, bibliotecas e softwares padrões (por exemplo o gedit, nano, interface gráfica ...).
-Colocar tudo isso em memoria é pagar um custo alto. Quando se usa docker se isola ambientes de uma maneira mais eficiente colocando
-dentro do container apenas oque faz sentido, imagine que seu container precisa conter um web-service que devolve informações de clientes, o container 
-precisaria apenas de um distribuição linux Ubuntu, TomCat, o respectivo .jar e um banco de dados. Isso já seria o suficiente para isolar um ambiente e garantir que ele funcione em qualquer outro sistema operacional baseado em Linux.
+Why Don't use A Virtual Machine
+-------------------------------
+
+Image you need a isolated web service to retrieve information about your clients. This system was develop using Java 8, TomCat server and MySQL database.
+
+**With Virtual Machine**: You install a new virtual machine, it will have its own operation system complete, with kernel, 
+binaries, libraries and graphical interface, then you deploy your system with its dependencies (JDK 1.8, TomCat and MySQL). The amount of memory used isn't trivial and can get worse if multiples virtual machines are necessary.
+
+**With Container**: You create a dockerfile describing you container, it will have you code and its dependencies (JDK 1.8, TomCat and MySQL), then you build container. The container will share host operacional system resources as kernel, binaries and libraries. The amount of memory used is trivial because expensive resources are being shared.
