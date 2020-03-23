@@ -9,10 +9,11 @@ resources, as kernel, binaries and libraries.
 | A container should isolate the program in your enviroment and guarantee the same behavior in different enviroments
 as development and production.
 
-| **Docker:** Docker is a tool to manage containers. Containerzation was no created by docker, it already existed in linux ecosystem, the docker just has enabled easy creation and manage of containers through dockerfile and interfaces as RESP API and CLI.
+| **Docker:** Docker is a tool to manage containers. 
+Containerzation was no created by docker, it already existed in linux ecosystem, the docker just has enabled easy creation and manage of containers through dockerfile and interfaces as RESP API and CLI.
 
 
-| **Imagens Docker:** 
+| **Docker Images:** 
 | It is a model to create containers.
 | It can be stored in repositories as Docker Hub.
 .. _Docker Hub: https://hub.docker.com/
