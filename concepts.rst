@@ -18,7 +18,7 @@ Containerzation was no created by docker, it already existed in linux ecosystem,
 - It uses AUFS (Advanced multi-layered unification filesystem)
 - It is composed by layers.
 - Each layer represents a change/commit.
-- A Layer can be called intermediary image.
+- A layer can be called intermediary image.
 - Only the last layer can be modified, it is created at container startup.
 - Layers make images high reusable.
 - It is possible build images from layers of other images.
