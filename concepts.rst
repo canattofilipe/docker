@@ -15,8 +15,7 @@ Containerzation was no created by docker, it already existed in linux ecosystem,
 
 | **Docker Images:** 
 | It is a model to create containers.
-| It can be stored in repositories as Docker Hub.
-.. _Docker Hub: https://hub.docker.com/
+| It can be stored in repositories as `Docker Hub <https://hub.docker.com/>`_.
 | It uses AUFS (Advanced multi-layered unification filesystem)
 | It is composed by layers.
 | Each layer represents a change/commit.
