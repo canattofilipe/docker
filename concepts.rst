@@ -9,18 +9,20 @@ resources, as kernel, binaries and libraries.
 | A container should isolate the program in your enviroment and guarantee the same behavior in different enviroments
 as development and production.
 
-| **Docker:** Docker is a tool to manage containers. Containerzation was no created by docker, it already existed in linux ecosystem, the docker just has enabled easy creation and manage of container through dockerfile and interfaces as RESP API and CLI.
+| **Docker:** Docker is a tool to manage containers. Containerzation was no created by docker, it already existed in linux ecosystem, the docker just has enabled easy creation and manage of containers through dockerfile and interfaces as RESP API and CLI.
+
 
 | **Imagens Docker:** 
-| Um modelo para se criar containers.
-| Podem ser armazenadas em repositorios, por exemplo o docker hub.
-| É composto por camadas/layers.
-| Cada camada representa uma ou mais mudanças no sistema de arquivos.
-| Uma camada também é chamada de imagem intermediaria.
-| Apenas a ultima camada pode ser alterada depois da inicialização do container.
-| Usa o AUFS (Advanced multi-layered unification filesystem)
-| O beneficio das camadas é permitir o reuso
-| É possivel compor imagens apartir de camadas de outras imagens.
+| It is a model to create containers.
+| It can be stored in repositories as Docker Hub.
+.. _Docker Hub: https://hub.docker.com/
+| It uses AUFS (Advanced multi-layered unification filesystem)
+| It is composed by layers.
+| Each layer represents a change/commit.
+| A Layer can be called intermediary image.
+| Only the last layer can be modified, it is created at container startup.
+| Layers make images high reusable.
+| It is possible build images from layers of other images.
 
 | **Porque não usar uma VM:** O ganho que sem tem ao usar docker ao invés de uma VM é a economia de recursos
 computacionais, uma VM terá seu pŕoprio sistema operacional completo, com kernel, bibliotecas e softwares padrões (por exemplo o gedit, nano, interface gráfica ...).
