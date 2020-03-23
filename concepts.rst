@@ -10,7 +10,7 @@ resources, as kernel, binaries and libraries.
 as development and production.
 
 | **Docker:** Docker is a tool to manage containers. Containerzation was no created by docker, it already existed in linux ecosystem,
-the docker just has enabled easy creation and manage of container through dockerfile and interfaces as RESP API and CLI.
+| the docker just has enabled easy creation and manage of container through dockerfile and interfaces as RESP API and CLI.
 
 | **Imagens Docker:** 
 | Um modelo para se criar containers.
