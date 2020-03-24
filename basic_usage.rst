@@ -85,4 +85,8 @@ to test it, open a new terminal and type:
 
   curl http://localhost:8080
 
+**map container directory:**
+.. code:: bash
+
+  docker container run -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
 
