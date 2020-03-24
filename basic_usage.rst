@@ -26,7 +26,7 @@ docker run:
 
   docker run debian bash --version
 
-**Create a new debian container and, then check its bash version, then remove it:** 
+**Create a new debian container, then check its bash version, then remove it:** 
 
 .. code:: bash
 
