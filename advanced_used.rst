@@ -7,3 +7,16 @@ Build an image from a Dockerfile, then start it as a container:
 
   docker image build -t ex-simple-build ./primeiro_build
   docker container run -p 80:80 ex-simple-build
+
+Build an image passing arguments:
+
+.. code:: bash
+
+  docker image build --build-arg S3_BUCKET=myapp -t ex-build-args ./build_com_args
+  docker container run ex-build-args bash -c 'echo $S3_BUCKET'
+
+Filter informations with docker inspect:
+
+.. code:: bash
+
+  docker image inspect --format="{{index .Config.Labels \"maintener\"}}" ex-build-args
