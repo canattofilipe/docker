@@ -47,7 +47,7 @@ Create a new debian container with name flag
 docker start:
 -------------
 
-Reusing a container with attach and iterative flags:
+Reuse a container with attach and iterative flags:
 
 .. code:: bash
 
@@ -73,7 +73,7 @@ Mapping:
 
 **map container port:**
 
-create a new container with nginx server, then map the container port 80 to a host operational system port 8080:
+Create a new container with nginx server, then map the container port 80 to a host operational system port 8080:
 
 .. code:: bash
 
@@ -94,29 +94,29 @@ create a new container with nginx server, then map a container directory to a ho
   docker container run -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
 
 
-Manageing container execution:
+Managing container execution:
 ------------------------------
 
-create and execute container in backgtound/daemon mode:
+Create and execute a container in background/daemon mode:
 
 .. code:: bash
 
      docker container run -d --name ex-daemon-basic -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
 
 
-stop a container in backgtound/daemon mode:
+Stop a container in background/daemon mode:
 
 .. code:: bash
 
      docker container stop ex-daemon-basic
 
-start an existing container in backgtound/daemon mode:
+Start an existing container in background/daemon mode:
 
 .. code:: bash
 
      docker container start ex-daemon-basic
 
-restart an existing container in backgtound/daemon mode:
+Restart an existing container in background/daemon mode:
 
 .. code:: bash
 
@@ -141,12 +141,19 @@ Execute a command in running container:
      docker container exec ex-daemon-basic uname -or
 
 
-List images:
+Managing Images:
 ----------------------
+List images:
 
 .. code:: bash
 
      docker image ls
+
+Remove Image:
+
+.. code:: bash
+
+     docker image rm <IMAGE_ID>
 
 List volumes:
 -------------
@@ -154,20 +161,3 @@ List volumes:
 .. code:: bash
 
      docker volume ls
-
-Remove images:
---------------
-
-.. code:: bash
-
-     docker image rm <IMAGE_ID>
-
-
-
-
-
-
-
-
-
-    
