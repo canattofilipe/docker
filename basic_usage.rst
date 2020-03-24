@@ -67,3 +67,22 @@ Show all containers:
 .. code:: bash
 
   docker container ps -a
+
+Mapping:
+--------
+
+**map container port:**
+
+create a new container with nginx server, then map the container port 80 to a host operational system port 8080:
+
+.. code:: bash
+
+  docker container run -p 8080:80 nginx
+
+to test it, open a new terminal and type:
+
+.. code:: bash
+
+  curl http://localhost:8080
+
+
