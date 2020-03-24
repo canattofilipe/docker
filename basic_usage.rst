@@ -93,3 +93,71 @@ create a new container with nginx server, then map a container directory to a ho
 
   docker container run -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
 
+
+Manageing container execution:
+------------------------------
+
+create and execute container in backgtound/daemon mode:
+
+.. code:: bash
+
+     docker container run -d --name ex-daemon-basic -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
+
+
+stop a container in backgtound/daemon mode:
+
+.. code:: bash
+     docker container stop ex-daemon-basic
+
+start an existing container in backgtound/daemon mode:
+
+.. code:: bash
+     docker container start ex-daemon-basic
+
+restart an existing container in backgtound/daemon mode:
+
+.. code:: bash
+     docker container restart ex-daemon-basic
+
+Visualize a running container logs:
+
+.. code:: bash
+     docker container logs ex-daemon-basic
+
+Inspect a running container:
+
+.. code:: bash
+     docker container inspect ex-daemon-basic
+
+Execute a command in running container:
+
+.. code:: bash
+     docker container exec ex-daemon-basic uname -or
+
+
+List images:
+----------------------
+
+.. code:: bash
+     docker image ls
+
+List volumes:
+-------------
+
+.. code:: bash
+     docker volume ls
+
+Remove images:
+-------------
+
+.. code:: bash
+     docker image rm <IMAGE_ID>
+
+
+
+
+
+
+
+
+    
