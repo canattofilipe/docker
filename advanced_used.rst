@@ -2,6 +2,7 @@ Advanced Usage
 ==============
 
 Build an image from a Dockerfile, then start it as a container:
+
 .. code:: bash
 
   docker image build -t ex-simple-build ./primeiro_build
