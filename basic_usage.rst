@@ -1,42 +1,69 @@
-comandos:
-docker: é um comando de help, mostra as opções de uso
+Docker Basic Usage
+==================
 
+Commands
+--------
 
-https://docs.docker.com/engine/reference/run/
-subindo um container: sudo docker container run hello-world
-Essa comanda agrupa outros:
-docker image pull-  faz download da imagem apartir do repo
-docker container create - cria um container
-docker container start - inicializa um container
-docker container exec - executa um container
+**docker run**: 
+The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a shotcurt of 4 other commands:
 
-criando um comtainer debian e verificando a versao do bash:
-sudo docker run debian bash --version
+- `docker pull <https://docs.docker.com/engine/reference/commandline/pull//>`_.: Download an image from repository.
+- `docker container create <https://docs.docker.com/engine/reference/commandline/container_create/>`_.: Create a new container.
+- `docker container start <https://docs.docker.com/engine/reference/commandline/container_start/>`_.: Start a container.
+- `docker container exec <https://docs.docker.com/engine/reference/commandline/container_exec/>`_.: Execute a command in a running container.
 
-verifica o status dos container:
-sudo docker container ps (mostra todos os containers em execucao)
-sudo docker container ps -a (mostra todos os containers)
+docker run:
+-----------
+**Start a new container:** 
 
-roda um container e depois remove do historico:
-sudo docker run --rm debian bash --version
+.. code:: bash
 
-Cria um container usando as as flag -it (i = modo interativo, t = terminal)
-sudo docker container run -it debian bash
+  docker container run hello-world
 
-Criando um container com nome:
-sudo docker container run --name mydeb -it debian bash
+**Create a new debian container and check its bash version:** 
 
-Reutilizando um container:
-docker container ls (lista os container ativos)
-docker container ls -ai (lista todos os containers)
-revivendo um container ja criado:
-docker container start -ai mydeb (a = attack, i = interativo)
+.. code:: bash
 
+  docker run debian bash --version
 
+**Create a new debian container and, then check its bash version, then remove it:** 
 
+.. code:: bash
 
+  docker run --rm debian bash --version
 
+**Create a new debian container with iterative and terminal flags** 
 
+.. code:: bash
 
+ docker container run -it debian bash
 
+**Create a new debian container with name flag** 
 
+.. code:: bash
+
+ docker container run --name mydeb -it debian bash
+
+docker start:
+-------------
+
+**Reusing a container with attach and iterative flags:**
+
+.. code:: bash
+
+ docker container start -ai mydeb
+
+docker container ps:
+--------------------
+
+**Show all containers in execution:**
+
+.. code:: bash
+
+  docker container ps
+
+**Show all containers:**
+
+.. code:: bash
+
+  docker container ps -a
