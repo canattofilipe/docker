@@ -4,7 +4,7 @@ Docker Basic Usage
 docker run:
 -----------
 
-The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a shotcurt of 4 other commands:
+The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a shortcut of 4 other commands:
 
 - `docker pull <https://docs.docker.com/engine/reference/commandline/pull//>`_.: Download an image from repository.
 - `docker container create <https://docs.docker.com/engine/reference/commandline/container_create/>`_.: Create a new container.
