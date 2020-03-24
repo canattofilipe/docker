@@ -1,9 +1,6 @@
 Docker Basic Usage
 ==================
 
-Commands
---------
-
 **docker run**: 
 The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a shotcurt of 4 other commands:
 
@@ -14,7 +11,7 @@ The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a sh
 
 docker run:
 -----------
-Start a new container: 
+Create and start a new container: 
 
 .. code:: bash
 
@@ -47,7 +44,7 @@ Create a new debian container with name flag
 docker start:
 -------------
 
-Reuse a container with attach and iterative flags:
+Reuse an existing container with attach and iterative flags:
 
 .. code:: bash
 
@@ -71,7 +68,7 @@ Show all containers:
 Mapping:
 --------
 
-**map container port:**
+**Map container port:**
 
 Create a new container with nginx server, then map the container port 80 to a host operational system port 8080:
 
@@ -85,9 +82,9 @@ to test it, open a new terminal and type:
 
   curl http://localhost:8080
 
-**map container directory:**
+**Map container directory:**
 
-create a new container with nginx server, then map a container directory to a host directory:
+Create a new container with nginx server, then map a container directory to a host directory:
 
 .. code:: bash
 
@@ -134,7 +131,7 @@ Inspect a running container:
 
      docker container inspect ex-daemon-basic
 
-Execute a command in running container:
+Execute a command in a running container:
 
 .. code:: bash
 
