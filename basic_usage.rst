@@ -1,7 +1,9 @@
 Docker Basic Usage
 ==================
 
-**docker run**: 
+docker run:
+-----------
+
 The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a shotcurt of 4 other commands:
 
 - `docker pull <https://docs.docker.com/engine/reference/commandline/pull//>`_.: Download an image from repository.
@@ -9,8 +11,6 @@ The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a sh
 - `docker container start <https://docs.docker.com/engine/reference/commandline/container_start/>`_.: Start a container.
 - `docker container exec <https://docs.docker.com/engine/reference/commandline/container_exec/>`_.: Execute a command in a running container.
 
-docker run:
------------
 Create and start a new container: 
 
 .. code:: bash
