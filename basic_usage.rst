@@ -14,31 +14,31 @@ The `docker run <https://docs.docker.com/engine/reference/run/>`_ method is a sh
 
 docker run:
 -----------
-**Start a new container:** 
+Start a new container: 
 
 .. code:: bash
 
   docker container run hello-world
 
-**Create a new debian container and check its bash version:** 
+Create a new debian container and check its bash version:
 
 .. code:: bash
 
   docker run debian bash --version
 
-**Create a new debian container, then check its bash version, then remove it:** 
+Create a new debian container, then check its bash version, then remove it:
 
 .. code:: bash
 
   docker run --rm debian bash --version
 
-**Create a new debian container with iterative and terminal flags** 
+Create a new debian container with iterative and terminal flags
 
 .. code:: bash
 
  docker container run -it debian bash
 
-**Create a new debian container with name flag** 
+Create a new debian container with name flag
 
 .. code:: bash
 
@@ -47,7 +47,7 @@ docker run:
 docker start:
 -------------
 
-**Reusing a container with attach and iterative flags:**
+Reusing a container with attach and iterative flags:
 
 .. code:: bash
 
@@ -56,13 +56,13 @@ docker start:
 docker container ps:
 --------------------
 
-**Show all containers in execution:**
+Show all containers in execution:
 
 .. code:: bash
 
   docker container ps
 
-**Show all containers:**
+Show all containers:
 
 .. code:: bash
 
