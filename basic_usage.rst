@@ -87,6 +87,8 @@ to test it, open a new terminal and type:
 
 **map container directory:**
 
+create a new container with nginx server, then map a container directory to a host directory:
+
 .. code:: bash
 
   docker container run -p 8080:80 -v /home/canattofilipe/dev/curso-docker/exercicio-volume/html/:/usr/share/nginx/html/ nginx
