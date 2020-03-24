@@ -107,31 +107,37 @@ create and execute container in backgtound/daemon mode:
 stop a container in backgtound/daemon mode:
 
 .. code:: bash
+
      docker container stop ex-daemon-basic
 
 start an existing container in backgtound/daemon mode:
 
 .. code:: bash
+
      docker container start ex-daemon-basic
 
 restart an existing container in backgtound/daemon mode:
 
 .. code:: bash
+
      docker container restart ex-daemon-basic
 
 Visualize a running container logs:
 
 .. code:: bash
+
      docker container logs ex-daemon-basic
 
 Inspect a running container:
 
 .. code:: bash
+
      docker container inspect ex-daemon-basic
 
 Execute a command in running container:
 
 .. code:: bash
+
      docker container exec ex-daemon-basic uname -or
 
 
@@ -139,19 +145,23 @@ List images:
 ----------------------
 
 .. code:: bash
+
      docker image ls
 
 List volumes:
 -------------
 
 .. code:: bash
+
      docker volume ls
 
 Remove images:
--------------
+--------------
 
 .. code:: bash
+
      docker image rm <IMAGE_ID>
+
 
 
 
