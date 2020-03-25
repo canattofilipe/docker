@@ -20,3 +20,9 @@ Filter informations with docker inspect:
 .. code:: bash
 
   docker image inspect --format="{{index .Config.Labels \"maintener\"}}" ex-build-args
+
+Build an image usign copy instruction:
+
+.. code:: bash
+
+  docker image build -t ex-build-copy ./build_com_copy/
