@@ -27,3 +27,16 @@ Build an image usign copy instruction:
 
   docker image build -t ex-build-copy ./build_com_copy/
   curl http://localhost:80
+
+Build and run a container with a http python server:
+
+.. code:: bash
+
+  docker image build -t ex-build-dev ./build-dev/
+  docker container run -it -v /home/canattofilipe/dev/github/docker/build_dev/:/app -p 80:8000 --name python-server ex-build-dev
+
+Build and run a container to read logs from other container volume:
+
+.. code:: bash
+
+  docker container run -it --volumes-from=python-server debian  tail -f /log/http-server.log
