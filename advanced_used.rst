@@ -26,3 +26,4 @@ Build an image usign copy instruction:
 .. code:: bash
 
   docker image build -t ex-build-copy ./build_com_copy/
+  curl http://localhost:80
