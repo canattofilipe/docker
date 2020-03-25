@@ -39,4 +39,16 @@ Build and run a container to read logs from other container volume:
 
 .. code:: bash
 
-  docker container run -it --volumes-from=python-server debian  tail -f /log/http-server.log
+  docker container run -it --volumes-from=python-server debian  cat /log/http-server.log
+
+  Upload in image to Docker Hub:
+
+.. code:: bash
+  # create a new image tag from an existing image.
+  docker image tag ex-simple-build canattofilipe/simple-build:1.0
+  # Sign In Docker Hub.
+  docker login --username=canattofilipe
+  # Push to Docker Hub.
+  docker image push canattofilipe/simple-build:1.0
+  
+
