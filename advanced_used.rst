@@ -44,6 +44,7 @@ Build and run a container to read logs from other container volume:
   Upload in image to Docker Hub:
 
 .. code:: bash
+
   # create a new image tag from an existing image.
   docker image tag ex-simple-build canattofilipe/simple-build:1.0
   # Sign In Docker Hub.
