@@ -110,3 +110,20 @@ Result:
   64 bytes from 172.17.0.3: seq=0 ttl=64 time=0.095 ms  
   64 bytes from 172.17.0.3: seq=1 ttl=64 time=0.150 ms
   64 bytes from 172.17.0.3: seq=2 ttl=64 time=0.178 ms
+
+**Test Conectivity between container and internet by ping:**
+
+.. code:: bash
+
+ # Test conectivy between container1 and internet
+ docker container exec -it container1 ping www.google.com
+
+Result:
+
+.. code:: bash
+
+  PING www.google.com (172.217.29.164): 56 data bytes
+  64 bytes from 172.217.29.164: seq=0 ttl=56 time=96.159 ms
+  64 bytes from 172.217.29.164: seq=1 ttl=56 time=23.113 ms
+  64 bytes from 172.217.29.164: seq=2 ttl=56 time=88.135 ms
+  64 bytes from 172.217.29.164: seq=3 ttl=56 time=109.490 ms
