@@ -127,3 +127,12 @@ Result:
   64 bytes from 172.217.29.164: seq=1 ttl=56 time=23.113 ms
   64 bytes from 172.217.29.164: seq=2 ttl=56 time=88.135 ms
   64 bytes from 172.217.29.164: seq=3 ttl=56 time=109.490 ms
+
+Setting up a container with host network type:
+----------------------------------------------
+
+**Run a container with host network type:**
+
+.. code:: bash
+
+  PING www.google.com (172.217.29.164): 56 data bytes
