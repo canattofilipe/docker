@@ -13,7 +13,8 @@ Network Types:
 - Host: Uses the host operational as it is.
 - Overlay (swarn): It is used in cluster context.
 
-**Setting up a container with network type none:**
+Setting up a container with network type none:
+----------------------------------------------
 
 .. code:: bash
 
@@ -31,16 +32,17 @@ Result:
           collisions:0 txqueuelen:1000 
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
-**Setting up a container with network type bridge:**
+Setting up a container with network type bridge:
+------------------------------------------------
 
-Inspect informations about bridge default configurations:
+**Inspect informations about bridge default configurations:**
 
 .. code:: bash
 
   docker network inspect bridge
 
-Test Conectivity between containers by ping:
---------------------------------------------
+**Test Conectivity between containers by ping:**
+
 .. code:: bash
 
   # run container1
