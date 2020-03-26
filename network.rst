@@ -131,8 +131,9 @@ Result:
 Setting up a container with host network type:
 ----------------------------------------------
 
-**Run a container with host network type:**
-
 .. code:: bash
 
-  PING www.google.com (172.217.29.164): 56 data bytes
+  # run a container with host network type
+  docker container run -d --name container3 --net host alpine sleep 1000
+  # exec instruction at container3
+  docker container exec -it container3 ifconfig
