@@ -2,7 +2,7 @@ Network
 =======
 
 - Each container has its own IP.
-- By default the container are in the same network, but it can be changed.
+- By default the containers are in the same network, but it can be changed.
 - The default docker network model is bridge, it uses it to acess  the host network.
 
 Network Types:
