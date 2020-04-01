@@ -8,9 +8,16 @@ services:
             - POSTGRES_USER=postgres
             - POSTGRES_PASSWORD=postgres
             - POSTGRES_DB=db
-        volumes: 
+        volumes:
             # volume dos dados
             - dados:/var/lib/postgres/data
             # Scripts
             - ./scripts:/scripts
             - ./scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
+    frontend:
+        image: nginx:1.13
+        volumes:
+            #Site
+            - ./web:/usr/share/nginx/html/
+        ports:
+            - 80:80
