@@ -17,7 +17,16 @@ services:
     frontend:
         image: nginx:1.13
         volumes:
-            #Site
+            # Site
             - ./web:/usr/share/nginx/html/
         ports:
             - 80:80
+    app:
+        image: python:3.6
+        volumes:
+            # Aplicacao
+            - ./app:/app
+        working_dir: /app
+        command: ./app.sh
+        ports:
+            - 8080:8080
