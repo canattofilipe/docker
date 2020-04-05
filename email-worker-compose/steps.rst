@@ -13,13 +13,13 @@ Run a check script:
 
   docker-compose exec db psql -U postgres -f ./scripts/check.sql
   
-  Scale:
+Scale:
 
 .. code:: bash
 
   docker-compose up --scale worker=3
   
- Log Scaled Container:
+Log Scaled Container:
 
 .. code:: bash
 
